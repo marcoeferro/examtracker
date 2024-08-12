@@ -1,0 +1,14 @@
+{% for result in results %}
+<tr>
+    <td>{{ result.nombre }}</td>
+    <td>{{ result.fecha_examen }}</td>
+    <td>{{ result.tipo_inscripcion }}</td>
+    <td>{{ result.inicio_inscripcion }}</td>
+    <td>{{ result.fin_inscripcion }}</td>
+    <td>{{ result.hora_inicio_examen }}</td>
+    <td>{{ result.aula }}</td>
+    <td>{{ result.fecha_tope_bajas }}</td>
+    <td>{{ result.docentes }}</td>
+    <td>{{ result.propuestas }}</td>
+</tr>
+{% endfor %}

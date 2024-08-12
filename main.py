@@ -20,7 +20,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")  # Soluciona algunos prob
 service = Service(driver_path)
 
 # Inicializar el driver de Chrome con las opciones y el servicio
-driver = webdriver.Chrome(service=service, options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 
 # URL de la página web a scrapear
 url = 'https://alu.unvime.edu.ar/g3w/fecha_examen?formulario_filtro[ra]=9220d714727dbe74790a6782a5241e56f7034064&formulario_filtro[ubicacion]=3b5e0365f0c2299dfd89eb3852a8ebb566382194&formulario_filtro[carrera]=b29b1565d9765a6a8b1c56798619c06dd91ba4f0&formulario_filtro[plan]=&formulario_filtro[materia]=&formulario_filtro[fecha_desde]=&formulario_filtro[fecha_hasta]=&formulario_filtro[tipo_mesa]='

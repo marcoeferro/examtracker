@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias Search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://unpkg.com/htmx.org@2.0.1"
+        integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-third is-offset-one-third">
+                <input type="text" class="input" placeholder="Search" name="q" hx-get="/search"
+                    hx-trigger="keyup changed delay:500ms" hx-target="#results">
+            </div>
+        </div>
+        <table class="table is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha Examen</th>
+                    <th>Tipo Inscripcion</th>
+                    <th>Inicio Inscripcion</th>
+                    <th>Fin Inscripcion</th>
+                    <th>Hora Inicio Examen</th>
+                    <th>Hora Fin Examen</th>
+                    <th>Aula</th>
+                    <th>Fecha Tope Bajas</th>
+                    <th>Docentes</th>
+                    <th>Propuestas</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
